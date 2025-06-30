@@ -1,0 +1,37 @@
+.wrapper {
+  width: 100%;
+  background: linear-gradient(90deg, #e0e7ff 0%, #f0fdfa 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  font-family: 'Montserrat', 'Inter', 'Roboto', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 60px;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .logo {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+  }
+
+  .appName {
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #22223b;
+  }
+}
+
+.langSelect {
+  min-width: 120px;
+  background: #fff;
+  border-radius: 4px;
+}
