@@ -1,15 +1,19 @@
-import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router';
 import Layout from './components/Layout/Layout';
 import { publicRoutes } from './routes';
+import { useLoading } from './hooks/useLoading';
+import CircularProgress from '@mui/material/CircularProgress';
 
 function App() {
-  useEffect(() => {
-    fetch('/models').then((res) => res.json());
-  }, []);
+  const { loading } = useLoading();
 
   return (
     <>
+      {loading && (
+        <div className="loading">
+          <CircularProgress />
+        </div>
+      )}
       <Router>
         <Routes>
           {publicRoutes.map((route, index) => {

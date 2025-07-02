@@ -1,15 +1,28 @@
 :root {
-    --primary: #fe2c55;
-    --default-layout-header-height: 60px;
-    --default-layout-width: 1150px;
-    --text-color: #333;
-    --default-layout-horizontal-spacer: 24px;
-    --white: #fff;
-    --black: black
+  --primary: #fe2c55;
+  --default-layout-header-height: 60px;
+  --default-layout-width: 1150px;
+  --text-color: #333;
+  --default-layout-horizontal-spacer: 24px;
+  --white: #fff;
+  --black: black;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
 }
